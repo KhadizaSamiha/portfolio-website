@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import {FaArrowDown } from 'react-icons/fa';
 
 const Navbar = () => {
     const navOptions = <>
@@ -11,7 +12,7 @@ const Navbar = () => {
     </>
     return (
         <div>
-            <div className="navbar bg-base-100">
+            <div className="navbar text-white bg-cyan-900">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -21,7 +22,7 @@ const Navbar = () => {
                         {navOptions}
                         </ul>
                     </div>
-                    <a className="btn btn-ghost normal-case text-xl">daisyUI</a>
+                    <span class=" ms-10 text-2xl font-bold bg-gradient-to-r from-cyan-600 via-cyan-500 to-cyan-400 text-transparent bg-clip-text animate-gradient">Khadiza Samiha</span>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
@@ -29,7 +30,7 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    <a className="btn">Download Resume</a>
+                    <a href='KhadizaSamihaResume.doc.pdf' download='KhadizaSamihaResume.doc.pdf'  className="btn  bg-cyan-100 opacity-80 w-2/3 lg:w-1/2"><FaArrowDown/>Download Resume</a>
                 </div>
             </div>
         </div>
